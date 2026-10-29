@@ -1,0 +1,17 @@
+{
+    "topheader": {
+        "support": "Technical Support: 8000-244-8888",
+        "shipping": "Free shipping on orders over 300 SAR",
+        "currency": "Saudi Arabia (SAR) 🇸🇦"
+    },
+    "mainheader": {
+        "cart": "Shopping Cart",
+        "account": "My Account",
+        "welcome": "Welcome",
+        "search": "Search products, graphics cards, accessories...",
+        "categories": "All Categories",
+        "currency": "SAR",
+        "store": "Techlap Store",
+        "login": "Login"
+    }
+}

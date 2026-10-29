@@ -1,0 +1,53 @@
+/*Start main style*/
+@import "tailwindcss";
+
+:root{
+  --bgheader: #0F172A;
+  --maincolor: #0284C7;
+  --textcolor: #CBD5E1;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Cairo", "Inter", sans-serif;
+}
+
+:root {
+  --bg1: #F7F9FB;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+.container{
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*End main style*/
