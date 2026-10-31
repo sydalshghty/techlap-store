@@ -5,6 +5,7 @@
         "currency": "Saudi Arabia (SAR) 🇸🇦"
     },
     "mainheader": {
+        "logo": "/src/assets/techlap-logo-en.svg",
         "cart": "Shopping Cart",
         "account": "My Account",
         "welcome": "Welcome",

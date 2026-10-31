@@ -5,11 +5,12 @@
         "currency": "المملكة العربية السعودية (SAR) 🇸🇦"
     },
     "mainheader": {
+        "logo": "/src/assets/techlap-logo-ar.svg",
         "cart": "سلة التسوق",
         "account": "حسابي",
         "welcome": "مرحبا بك",
         "search": "ابحث عن الموديل، كرت الشاشة، ملحقات...",
-        "categories": "جميع الأقسام",
+        "categories": "جميع التصنيفات",
         "currency": "ر.س",
         "store": "متجر تك لاب",
         "login": "تسجيل الدخول"

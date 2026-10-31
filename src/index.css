@@ -5,6 +5,13 @@
   --bgheader: #0F172A;
   --maincolor: #0284C7;
   --textcolor: #CBD5E1;
+  --bgbtn: #F8FAFC;
+  --bordercolor: #E2E8F0;
+}
+
+body{
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .scrollbar-hide {
@@ -51,3 +58,10 @@ ul{
   }
 }
 /*End main style*/
+/*Start Main-Header Style*/
+.mobile-search input{
+  padding: 4px;
+}
+.mobile-search input::placeholder{
+  padding-right: 4px;
+}
