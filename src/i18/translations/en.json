@@ -14,5 +14,55 @@
         "currency": "SAR",
         "store": "Techlap Store",
         "login": "Login"
-    }
+    },
+    "btncategories": "All Categories",
+    "categories": [
+        { 
+            "id": 1, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 2, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 3, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 4, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 5, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 6, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 7, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 8, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        },
+        { 
+            "id": 9, 
+            "name": "Business Laptops" , 
+            "href": "#"
+        }
+    ]
+    ,
+    "dailydeals": "Daily Deals"
 }
