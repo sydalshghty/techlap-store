@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Search, ShoppingCart, Heart, User , Menu, X , ChevronDown } from "lucide-react";
+import { Search, ShoppingCart, Heart, User, Menu, X, ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-export default function Header() {
+export default function MainHeader() {
     const { t } = useTranslation();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [search, setSearch] = useState("");
@@ -21,7 +21,7 @@ export default function Header() {
                         <div className="flex items-center gap-2 h-10 border-2 border-sky-600 rounded-lg overflow-hidden">
                             <button className="allcategories-btn cursor-pointer w-33.25 h-full bg-(--bgbtn) border-l border-(--bordercolor) flex justify-center gap-5 items-center pt-2.5 pb-2.5 pl-3 pr-3 m-auto">
                                 <p className="text-[12px] font-medium text-[#334155]">{t("mainheader.categories")}</p>
-                                <ChevronDown className="text-[#334155] " size={18}/>
+                                <ChevronDown className="text-[#334155] " size={18} />
                             </button>
                             <input
                                 type="text"
@@ -43,7 +43,7 @@ export default function Header() {
                         {/* Account */}
                         <button className="flex items-center gap-2 cursor-pointer">
                             <div className="w-9 h-9 bg-slate-100 rounded-full flex items-center justify-center">
-                                    <User size={18} className="text-[#475569]"/>
+                                <User size={18} className="text-[#475569]" />
                             </div>
 
                             <div className="text-start">
@@ -61,7 +61,7 @@ export default function Header() {
                             aria-label="Wishlist"
                             className="relative cursor-pointer"
                         >
-                            <Heart size={20} className="text-[#334155]"/>
+                            <Heart size={20} className="text-[#334155]" />
 
                             <span className="absolute -top-2 -right-2 bg-[#F43F5E] text-white text-[10px] font-medium font-sans w-4 h-4 rounded-full flex items-center justify-center">
                                 3
@@ -133,34 +133,15 @@ export default function Header() {
                                 }
                             >
                                 {mobileMenuOpen ? (
-                                    <X size={20} className="cursor-pointer"/>
+                                    <X size={20} className="cursor-pointer" />
                                 ) : (
-                                    <Menu size={20} className="cursor-pointer"/>
+                                    <Menu size={20} className="cursor-pointer" />
                                 )}
                             </button>
 
                         </div>
                     </div>
 
-                    {/* Mobile Search */}
-                    <div className="mobile-search mt-4 flex h-10 border border-[#0284C7] rounded-lg overflow-hidden">
-
-                        <input
-                            value={search}
-                            onChange={(e) => setSearch(e.target.value)}
-                            type="text"
-                            placeholder={t("mainheader.search")}
-                            className="flex-1 min-w-0 px-3 text-[13px] font-medium   text-[#94A3B8] outline-none"
-                        />
-
-                        <button
-                            aria-label="Search"
-                            className="w-12 cursor-pointer bg-[#0284C7] flex items-center justify-center text-white"
-                        >
-                            <Search size={18} />
-                        </button>
-                    </div>
-         
                 </div>
             </div>
         </div>

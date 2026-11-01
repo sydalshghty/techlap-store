@@ -7,6 +7,7 @@
   --textcolor: #CBD5E1;
   --bgbtn: #F8FAFC;
   --bordercolor: #E2E8F0;
+  --textcolor2: #334155;
 }
 
 body{
@@ -65,3 +66,4 @@ ul{
 .mobile-search input::placeholder{
   padding-right: 4px;
 }
+/*Start Category-navbar Style*/
