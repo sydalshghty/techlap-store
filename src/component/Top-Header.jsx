@@ -6,7 +6,7 @@ export default function TopHeader() {
     const { t } = useTranslation();
 
     return (
-        <div className="top-header w-full bg-white font-sans text-[#17213c]">
+        <div className="top-header w-full bg-white  text-[#17213c] font-cairo">
             <div className="bg-[#111a30] text-white h-7.5 flex justify-center items-center">
                 <div className="container mx-auto flex  items-center justify-between gap-3 px-4 py-2 text-[11px] sm:px-6 lg:px-8">
                     {/* Shipping & Support */}
@@ -23,7 +23,7 @@ export default function TopHeader() {
                         <div className="flex items-center gap-1">
                             <Headphones size={15} className="text-[#08a7e8]" />
 
-                            <span className="text-[12px] text-(--textcolor)">{t("topheader.support")}</span>
+                            <span className="text-[12px] text-(--textcolor) font-cairo">{t("topheader.support")}</span>
                         </div>
                     </div>
 

@@ -1,5 +1,7 @@
 /*Start main style*/
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root{
   --bgheader: #0F172A;
@@ -9,10 +11,16 @@
   --bordercolor: #E2E8F0;
   --textcolor2: #334155;
 }
+@theme {
+  --font-cairo: "Cairo", sans-serif;
+}
 
-body{
+* {
   font-family: "Cairo", sans-serif;
-  font-optical-sizing: auto;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
 }
 
 .scrollbar-hide {

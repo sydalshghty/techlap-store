@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Search, ShoppingCart, Heart, User, Menu, X, ChevronDown } from "lucide-react";
+import { Search, ShoppingCart, Heart, User, ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import techlapIcon from "../assets/techlap-logo-icon.svg";
 export default function MainHeader() {
     const { t } = useTranslation();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,8 +14,15 @@ export default function MainHeader() {
                 {/* Desktop Header */}
                 <div className="hidden lg:flex items-center justify-between gap-8 h-18.25 pt-3 pb-3">
                     {/* Logo */}
-                    <Link to={'/'} className="col-logo">
-                        <img src={t("mainheader.logo")} alt="logo" className="w-fit h-fit object-contain" />
+                    <Link to={'/'} className="col-logo flex items-center gap-2.5">
+                        <img src={techlapIcon} alt="logo" className="w-fit h-fit object-contain" />
+                        <div className="col-text-logo">
+                            <h1 className="text-[20px] lg:text-[24px]  font-extrabold font-cairo">
+                                <span className="text-[#0F172A]">{t("mainheader.logotext1")}</span>
+                                <span className="text-[#0284C7]">{t("mainheader.logotext2")}</span>
+                            </h1>
+                            <p className="text-[10px] font-semibold text-[#64748B]">TECHLAP STORE</p>
+                        </div>
                     </Link>
                     {/* Search */}
                     <div className="flex-1 max-w-162.5">
@@ -99,17 +107,42 @@ export default function MainHeader() {
                 <div className="lg:hidden">
 
                     {/* Top Row */}
-                    <div className="flex items-center justify-between gap-3 h-13">
+                    <div className="flex items-center justify-between gap-3 h-13 pt-2 pb-2">
 
                         {/* Logo */}
-                        <Link to={'/'} className="col-logo w-30">
-                            <img src={t("mainheader.logo")} alt="logo" className="w-full h-full object-contain" />
+                        <Link to={'/'} className="col-logo flex items-center gap-1">
+                        <img src={techlapIcon} alt="logo" className="w-8 md:w-10 object-contain" />
+                        <div className="col-text-logo">
+                            <h1 className="text-[18px] lg:text-[24px]  font-extrabold">
+                                <span className="text-[#0F172A]">{t("mainheader.logotext1")}</span>
+                                <span className="text-[#0284C7]">{t("mainheader.logotext2")}</span>
+                            </h1>
+                            <p className="text-[10px] font-semibold text-[#64748B]">TECHLAP STORE</p>
+                        </div>
                         </Link>
+
+                        {/* Search */}
+                        <div className="w-[50%]">
+                            <div className="flex items-center gap-2 h-9 border-2 border-sky-600 rounded-lg overflow-hidden">
+                                <input
+                                    type="text"
+                                    value={search}
+                                    onChange={(e) => setSearch(e.target.value)}
+                                    placeholder={t("mainheader.search")}
+                                    className="flex-1 min-w-0 h-full pr-2 pl-2 text-[13px] text-[#94A3B8] font-extralight outline-none placeholder:text-gray-400"
+                                />
+                                <button
+                                    aria-label="Search"
+                                    className="cursor-pointer h-full w-10 bg-sky-600 hover:bg-sky-700 text-white flex items-center justify-center transition-colors"
+                                >
+                                    <Search size={17} />
+                                </button>
+                            </div>
+                        </div>
 
                         {/* Mobile Actions */}
                         <div className="flex items-center gap-4">
-
-                            <button aria-label="Wishlist" className="relative cursor-pointer">
+                            <button aria-label="Wishlist" className="relative cursor-pointer hidden sm:flex">
                                 <Heart size={20} />
 
                                 <span className="absolute -top-2 -right-2 bg-rose-500 text-white font-sans text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
@@ -123,20 +156,6 @@ export default function MainHeader() {
                                 <span className="absolute -top-2 -right-2 bg-sky-600 text-white font-sans text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
                                     4
                                 </span>
-                            </button>
-
-                            <button
-
-                                aria-label="Toggle menu"
-                                onClick={() =>
-                                    setMobileMenuOpen(!mobileMenuOpen)
-                                }
-                            >
-                                {mobileMenuOpen ? (
-                                    <X size={20} className="cursor-pointer" />
-                                ) : (
-                                    <Menu size={20} className="cursor-pointer" />
-                                )}
                             </button>
 
                         </div>

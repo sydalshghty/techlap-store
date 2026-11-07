@@ -1,7 +1,8 @@
+import HeroSlider from "../component/Hero-Slider";
 function Home() {
     return (
         <>
-           <h1>home, page</h1>
+           <HeroSlider/>
         </>
     )
 }

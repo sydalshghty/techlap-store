@@ -5,7 +5,8 @@
         "currency": "المملكة العربية السعودية (SAR) 🇸🇦"
     },
     "mainheader": {
-        "logo": "/src/assets/techlap-logo-ar.svg",
+        "logotext1": "تيك",
+        "logotext2": "لاب",
         "cart": "سلة التسوق",
         "account": "حسابي",
         "welcome": "مرحبا بك",
@@ -63,5 +64,6 @@
             "href": "#"
         }
     ],
-    "dailydeals": "عروض يومية"
+    "dailydeals": "عروض يومية",
+    "herobanner": "/src/assets/hero-banner-ar-1.png"
 }

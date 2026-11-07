@@ -5,7 +5,8 @@
         "currency": "Saudi Arabia (SAR) 🇸🇦"
     },
     "mainheader": {
-        "logo": "/src/assets/techlap-logo-en.svg",
+        "logotext1": "TECH",
+        "logotext2": "LAP",
         "cart": "Shopping Cart",
         "account": "My Account",
         "welcome": "Welcome",
@@ -64,5 +65,6 @@
         }
     ]
     ,
-    "dailydeals": "Daily Deals"
+    "dailydeals": "Daily Deals",
+    "herobanner": "/src/assets/hero-banner-en-1.png"
 }
