@@ -15,7 +15,7 @@ export default function MainHeader() {
                 <div className="hidden lg:flex items-center justify-between gap-8 h-18.25 pt-3 pb-3">
                     {/* Logo */}
                     <Link to={'/'} className="col-logo flex items-center gap-2.5">
-                        <img src={techlapIcon} alt="logo" className="w-fit h-fit object-contain" />
+                        <img src={techlapIcon} alt="logo" fetchPriority="high" loading="eager" className="w-fit h-fit object-contain" />
                         <div className="col-text-logo">
                             <h1 className="text-[20px] lg:text-[24px]  font-extrabold font-cairo">
                                 <span className="text-[#0F172A]">{t("mainheader.logotext1")}</span>

@@ -66,5 +66,6 @@
     ]
     ,
     "dailydeals": "Daily Deals",
-    "herobanner": "/hero-banner-en-1.png"
+    "herobanner": "/hero-banner-en.jpg",
+    "herobannermobile": "/hero-banner-en-mobile.jpg"
 }

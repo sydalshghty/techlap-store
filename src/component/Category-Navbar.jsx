@@ -55,44 +55,44 @@ const CategoryNavbar = () => {
                             <div className="absolute right-0 top-0 bottom-0 w-8 bg-linear-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
                             <Swiper
-    key={currentLanguage}
-    dir={isArabic ? "rtl" : "ltr"}
-    slidesPerView="auto"
-    spaceBetween={24}
-    freeMode={true}
-    loop={true}
-    observer={true}
-    observeParents={true}
-    watchOverflow={true}
-    modules={[FreeMode, Autoplay]}
-    autoplay={{
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-    }}
-    className="w-full"
->
-    {categoriesList.map((category) => (
-        <SwiperSlide
-            key={category.id}
-            className="!w-auto flex items-center"
-        >
-            <a
-                href="#"
-                className="text-[12px] font-medium text-[var(--textcolor2)] hover:text-[var(--maincolor)] whitespace-nowrap transition-colors py-2 block cursor-pointer"
-            >
-                {category.name}
-            </a>
-        </SwiperSlide>
-    ))}
-</Swiper>
+                                key={currentLanguage}
+                                dir={isArabic ? "rtl" : "ltr"}
+                                slidesPerView="auto"
+                                spaceBetween={24}
+                                freeMode={true}
+                                loop={true}
+                                observer={true}
+                                observeParents={true}
+                                watchOverflow={true}
+                                modules={[FreeMode, Autoplay]}
+                                autoplay={{
+                                    delay: 2000,
+                                    disableOnInteraction: false,
+                                    pauseOnMouseEnter: true,
+                                }}
+                                className="w-full"
+                            >
+                            {categoriesList.map((category) => (
+                                <SwiperSlide
+                                    key={category.id}
+                                    className="!w-auto flex items-center"
+                                >
+                                    <a
+                                        href="#"
+                                        className="text-[12px] font-medium text-[var(--textcolor2)] hover:text-[var(--maincolor)] whitespace-nowrap transition-colors py-2 block cursor-pointer"
+                                    >
+                                        {category.name}
+                                    </a>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                         </div>
 
                         <a
                             href="#"
                             className="shrink-0 flex items-center gap-1.5 text-[#D97706]  text-[12px]  font-semibold  transition-colors cursor-pointer"
                         >
-                            <img src={DailyDealsIcon} alt='daily-icon' />
+                            <img src={DailyDealsIcon} alt='daily-icon' fetchPriority='high' loading='eager'/>
                             <span className="hidden sm:inline-block">{t("dailydeals")}</span>
                         </a>
 

@@ -6,7 +6,7 @@ function Header() {
         <div className="header sticky top-0 w-full h-full z-10">
             <TopHeader />
             <MainHeader />
-            <CategoryNavbar />
+            <CategoryNavbar /> 
         </div>
     )
 }
