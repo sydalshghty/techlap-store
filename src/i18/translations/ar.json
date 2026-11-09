@@ -65,5 +65,5 @@
         }
     ],
     "dailydeals": "عروض يومية",
-    "herobanner": "/src/assets/hero-banner-ar-1.png"
+    "herobanner": "/public/hero-banner-ar-1.png"
 }

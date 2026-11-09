@@ -66,5 +66,5 @@
     ]
     ,
     "dailydeals": "Daily Deals",
-    "herobanner": "/src/assets/hero-banner-en-1.png"
+    "herobanner": "/public/hero-banner-en-1.png"
 }

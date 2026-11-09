@@ -27,7 +27,7 @@ export default function MainHeader() {
                     {/* Search */}
                     <div className="flex-1 max-w-162.5">
                         <div className="flex items-center gap-2 h-10 border-2 border-sky-600 rounded-lg overflow-hidden">
-                            <button className="allcategories-btn cursor-pointer w-33.25 h-full bg-(--bgbtn) border-l border-(--bordercolor) flex justify-center gap-5 items-center pt-2.5 pb-2.5 pl-3 pr-3 m-auto">
+                            <button className="allcategories-btn cursor-pointer w-33.25 h-full bg-[#F8FAFC] border-l border-[#E2E8F0] flex justify-center gap-5 items-center pt-2.5 pb-2.5 pl-3 pr-3 m-auto">
                                 <p className="text-[12px] font-medium text-[#334155]">{t("mainheader.categories")}</p>
                                 <ChevronDown className="text-[#334155] " size={18} />
                             </button>
@@ -36,7 +36,7 @@ export default function MainHeader() {
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
                                 placeholder={t("mainheader.search")}
-                                className="flex-1 min-w-0 h-full  text-[13px] text-[#94A3B8] font-extralight outline-none placeholder:text-gray-400 pl-20"
+                                className="flex-1 min-w-0 h-full  text-[13px] text-[#94A3B8] font-extralight outline-none placeholder:text-gray-400"
                             />
                             <button
                                 aria-label="Search"
