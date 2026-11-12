@@ -18,54 +18,54 @@
     },
     "btncategories": "All Categories",
     "categories": [
-        { 
-            "id": 1, 
-            "name": "Business Laptops" , 
+        {
+            "id": 1,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 2, 
-            "name": "Business Laptops" , 
+        {
+            "id": 2,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 3, 
-            "name": "Business Laptops" , 
+        {
+            "id": 3,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 4, 
-            "name": "Business Laptops" , 
+        {
+            "id": 4,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 5, 
-            "name": "Business Laptops" , 
+        {
+            "id": 5,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 6, 
-            "name": "Business Laptops" , 
+        {
+            "id": 6,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 7, 
-            "name": "Business Laptops" , 
+        {
+            "id": 7,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 8, 
-            "name": "Business Laptops" , 
+        {
+            "id": 8,
+            "name": "Business Laptops",
             "href": "#"
         },
-        { 
-            "id": 9, 
-            "name": "Business Laptops" , 
+        {
+            "id": 9,
+            "name": "Business Laptops",
             "href": "#"
         }
-    ]
-    ,
+    ],
     "dailydeals": "Daily Deals",
     "herobanner": "/hero-banner-en.jpg",
-    "herobannermobile": "/hero-banner-en-mobile.jpg"
+    "herobannermobile": "/hero-banner-en-mobile.jpg",
+    "titlecategory": "main category"
 }
