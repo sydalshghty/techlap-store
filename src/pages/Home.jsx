@@ -8,9 +8,9 @@ function Home() {
         <>
             <HeroSlider />
             <AllCategoriesSlider />
-            <PromoBanners />
+            {/* <PromoBanners />
             <Brands />
-            <NewArrivalsProducts />
+            <NewArrivalsProducts />*/}
         </>
     )
 }
